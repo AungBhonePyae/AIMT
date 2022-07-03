@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas, mollitia praesentium reprehenderit cumque dolores nam obcaecati sed tenetur et inventore? Corporis expedita dolores quasi, esse quisquam debitis accusamus. Dolore.
+    </p>
+    <script>
+        const para=document.querySelector("p");
+        console.log(para.classList);
+        para.classList.add("bg-blue");
+        console.log(para.classList);
+        para.classList.remove("red");
+        console.log(para.classList);
+
+        if(para.classList.contains("red")) {
+            console.log('red is here')
+        } else {
+            console.log("no red class");
+        }
+    </script>
+</body>
+</html>

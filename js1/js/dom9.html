@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1"></div>
+    <input type="text" placeholder="Enter Name" id="input">
+    <script>
+        const box1=document.querySelector(".box-1");
+        // box1.addEventListener("mouseenter", () => {
+        //     console.log("mouse enter")
+        // })
+        // box1.addEventListener("mousedown", ()=> {
+        //     console.log("mouse down");
+        // })
+        // box1.addEventListener("mouseup", ()=> {
+        //     console.log("mouse up");
+        // })
+        // box1.addEventListener("mousemove", ()=>{
+        //     console.log("mouse move");
+        // })
+
+        const input=document.querySelector("#input");
+        input.addEventListener("keyup", ()=> {
+            console.log('keyup');
+        })
+    </script>
+</body>
+</html>

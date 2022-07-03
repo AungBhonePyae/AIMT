@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1></h1>
+    <ul class="list">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+        <li>list6</li>
+        <li>list7</li>
+    </ul>
+
+    <script>
+        document.write("hello");
+        let h1=document.querySelector("h1");
+        console.log(h1);
+        h1.append("This is heading");
+
+        let list=document.querySelector(".list");
+        console.log(list);
+        console.log(list.children);
+        console.log(list.firstElementChild);
+        list.firstElementChild.style.color="red";
+        list.lastElementChild.style.backgroundColor="blue";
+        list.children[3].style.textTransform="uppercase";
+        list.children[4].remove();
+        list.children[2].append("hello")
+
+    </script>
+    
+</body>
+</html>

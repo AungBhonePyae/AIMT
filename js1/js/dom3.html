@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 class="title">Morning</h1>
+    <p>
+        Lorem ipsum dolor sit amet 
+        <i>consectetur adipisicing elit.</i> 
+        Corrupti <b>eligendi et dolore tempora</b> 
+        minus excepturi, 
+        corporis id at unde ipsa veniam b
+        eatae sit asperiores vel, cumque est, aperiam pariatur! Voluptatibus!
+    </p>
+    <script>
+        const para=document.querySelector("p");
+        //textContent, innerText, innerHTML
+        console.log(para.textContent);
+        console.log(para.innerText);
+        console.log(para.innerHTML);
+
+        const title=document.querySelector(".title");
+        title.textContent="<i>Hello";
+        // title.innerHTML="<i>Hello</i>";
+    </script>
+</body>
+</html>
