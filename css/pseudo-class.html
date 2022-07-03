@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class</title>
+    <style>
+        p{
+            transition: color 0.7s ease-in-out;
+            
+
+        }
+        p:hover{
+            color: red;
+            /* point, wait, text, move */
+            cursor: move;
+
+        }
+        button:active{
+            background-color: violet;
+        }
+        input:focus{
+            color: blue;
+        }
+        a:visited{
+            color: pink;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            text-transform: uppercase;
+        }
+        li:nth-child(2){
+            color: gray;
+        }
+        input[type="checkbox"]:checked{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>paragraph</p>
+    <button>click</button>
+    <input type="text" placeholder="Name">
+    <a href="three.html">Exercise</a>
+    <a href="two.html">Float</a>
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul>
+    <input type="checkbox">
+    <label for="">Hello</label>
+    
+</body>
+</html>

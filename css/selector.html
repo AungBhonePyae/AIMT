@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        h1{
+            /* color: aqua; */
+        }
+        .head{
+           /* color: fff000; */
+        }
+        #name{
+            /*color: rgb(123, 44, 234); */
+        }
+        label[for=name]{
+           /* color: rgba(123, 33, 55, 0.5) */
+        }
+        *{
+           /* color: orange */
+        }
+        label[class=age]{
+            color: blueviolet;
+        }
+        h3, p.paragraph, small{
+            color: blue;
+        }
+        div span{
+            color: green;
+        }
+        /* div > span{
+            color: red;
+        } */
+        label[id=nickname]{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter</h1>
+    <h2 class="head">Enter</h2>
+    <p id="name">Aung Bhone Pyae</p>
+    <label for="name">UU</label>
+    <label class="age"> Age</label>
+    <h3>Hello</h3>
+    <p class="paragraph">Aung Bhone Pyae</p>
+    <small>This is small text</small>
+
+    <span> This is span</span>
+    <div>
+        <h1>Hello</h1>
+        <span>This is span</span>
+        <p>Aung Bhone Pyae. Aung BHone Pyae</p>
+        <span>This is span</span>
+    </div>
+
+    <label id="nickname">Name</label>
+</body>
+</html>

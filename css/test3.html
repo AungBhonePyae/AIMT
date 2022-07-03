@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test3</title>
+    <style>
+        .header{
+            text-align: center;
+            color: aqua;
+            padding: 30px;
+
+        }
+        .header h1::before{
+            content: open-quote;
+            font-size: 100px;
+            color: aqua;
+        }
+       .header h1::after{
+            content: close-quote;
+            font-size: 100px;
+            color: aqua;
+        }
+        .container img{
+            width: 120px;
+            height: 120px;
+            border: 1px solid blueviolet;
+            border-radius: 50%;
+            margin-top: -75px;
+            
+            
+              }
+        .container{
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 40vh;
+            
+        }
+        .box{
+            border: 1px solid blue;
+            width: 30%;
+            text-align: center;
+        }
+        @media(max-width:800px){
+            .container{
+                row-gap: 100px;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Testmodel</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1653503275094-105729729214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
+            <h1>John Doe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sequi voluptatibus vero consectetur commodi mollitia aspernatur magni quisquam adipisci expedita, ex impedit tempore cumque deleniti rem cupiditate molestiae numquam saepe?</p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1653503275094-105729729214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
+            <h1>John Doe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sequi voluptatibus vero consectetur commodi mollitia aspernatur magni quisquam adipisci expedita, ex impedit tempore cumque deleniti rem cupiditate molestiae numquam saepe?</p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1653503275094-105729729214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
+            <h1>John Doe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sequi voluptatibus vero consectetur commodi mollitia aspernatur magni quisquam adipisci expedita, ex impedit tempore cumque deleniti rem cupiditate molestiae numquam saepe?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

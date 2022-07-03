@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        h1{
+            border: 1px solid rebeccapurple;
+            width: 200px;
+            height: 100px;
+            display: inline;
+        }
+        span{
+            border: 1px solid rebeccapurple;
+            width: 200px;
+            height: 100px;
+            display: block;
+        }
+        b{
+            border: 1px solid rebeccapurple;
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+        }
+        .one{
+            display: none;
+        }
+        .two{
+            opacity: 0;
+        }
+        .three{
+            visibility: hidden;
+        }
+        .one:hover, .two:hover, .three:hover{
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <span>inline element</span>
+
+    <b>bold element</b>
+    <b>bold element</b>
+
+    <hr>
+    <h1 class="one">One</h1>
+    <hr>
+    <h2 class="two">Two</h2>
+    <hr>
+    <h3 class="three">Three</h3>
+    <hr>
+    
+</body>
+</html>

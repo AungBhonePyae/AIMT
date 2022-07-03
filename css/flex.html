@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .container{
+            border: 1px solid rebeccapurple;
+            height: 200px;
+            display: flex;
+            /* row, column, row-reverse, column-reverse */
+            flex-direction: row;
+            /* wrap, nowrap, wrap-reverse */
+            flex-wrap: wrap;
+            /* center, fles-start, flex-end, space-between, space-around, space-evenly */
+            justify-content: center;
+            align-content: space-between;
+            /* center, flex-start, flex-end */
+            align-items: center;
+
+        }
+        .box{
+            border: 1px solid firebrick;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    
+</body>
+</html>
